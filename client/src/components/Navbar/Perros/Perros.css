@@ -1,0 +1,109 @@
+.contenedor-principal {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.carta-container {
+  display: flex;
+  justify-content: center;
+  width: 654px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin: 5px 10px 5px 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px 0px;
+}
+
+.imagenlink > img {
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.imagenlink:hover > img {
+  transform: scale(1.2);
+  opacity: 0.7;
+}
+
+.carta-desc {
+  height: 30%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.carta-desc > p {
+  color: white;
+  display: block;
+  font-size: 16px;
+}
+
+.carta-desc > h1 {
+  color: white;
+  display: block;
+  font-size: 20px;
+}
+
+#contenedor_botones {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#contenedor_botones button {
+  all: unset;
+  color: white;
+  padding: 20px 110px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#contenedor_botones button:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+  background-color: #f7945b;
+  transition: 1s ease all;
+}
+#principal {
+  background-image: url("https://c.wallhere.com/photos/4e/91/1920x1200_px_landscape_nature_sky-734989.jpg!d");
+}
+.caja_buscadores {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0px 7px 0px 6px;
+}
+
+.buscador {
+  flex-direction: row;
+  border: none;
+  height: 20px;
+  width: 666px;
+  margin-right: 2px;
+  line-height: 45px;
+  border-radius: 2px;
+}
+
+.contenedor_paginado {
+  background-color: black;
+}
+
+.anterior {
+  float: left;
+}
+
+.siguiente {
+  float: right;
+}
+
+.imagencarga {
+  position: absolute;
+  top: 22%;
+  right: 40%;
+}
+
+.boton_borrar {
+  position: absolute;
+  right: 0%;
+}

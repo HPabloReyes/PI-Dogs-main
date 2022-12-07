@@ -1,0 +1,26 @@
+#menu {
+  background-color: rgb(0, 0, 0);
+}
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  display: inline-block;
+}
+
+#menu ul li a {
+  color: white;
+  display: block;
+  padding: 20px 60px;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+  background-color: #f7945b;
+  transition: 1s ease all;
+}

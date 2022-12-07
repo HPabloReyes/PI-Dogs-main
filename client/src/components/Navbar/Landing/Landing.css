@@ -1,0 +1,53 @@
+.contenedor_landing {
+  position: relative;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 20px 0px 20px 20px;
+  box-shadow: 5px 5px 5px 0px;
+  background-color: black;
+}
+.imagen_landing {
+  border: solid white;
+  border-color: white;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.imagen_landing:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+  transition: all ease 1s;
+}
+
+.texto_landing {
+  position: absolute;
+  bottom: 80%;
+  right: 27%;
+  color: white;
+}
+.Boton {
+  height: 10%;
+  width: 6%;
+  font-size: 0.5rem;
+  border: solid white;
+  border-radius: 50%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0);
+  bottom: 47%;
+}
+
+.Boton:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+  transition: all ease 1s;
+}
+
+.fondolanding {
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}

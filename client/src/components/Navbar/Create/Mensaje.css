@@ -1,0 +1,17 @@
+.Contenedor_mensaje {
+  padding-top: 50px;
+  position: absolute;
+  color: white;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  right: 25%;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.imagen {
+  position: absolute;
+  z-index: 0;
+}

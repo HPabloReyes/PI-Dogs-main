@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+}
+
+.imagen_de_fondo {
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.titulo {
+  display: flex;
+  font-size: large;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin-bottom: 100px;
+}
+
+.boton_mensaje {
+  font-size: 100px;
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  right: 37%;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.boton_mensaje:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+  background-color: #f7945b;
+  transition: 1s ease all;
+}

@@ -1,0 +1,21 @@
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("http://cdn09.overnature.net/5120/585-atardecer-en-el-campo.jpg");
+}
+
+.carta {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 50%;
+}
+
+.imagen_de_fondo {
+  height: 100%;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
