@@ -2,13 +2,15 @@ const { Router } = require("express");
 const axios = require("axios");
 const { Raza, Temperamento } = require("../db");
 const { NUMBER } = require("sequelize");
+require("dotenv").config();
+const { ALLDOGS } = process.env;
 
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
 
 const router = Router();
 
-const allDogs = "https://api.thedogapi.com/v1/breeds";
+const allDogs = ALLDOGS;
 const queryDogs = "https://api.thedogapi.com/v1/breeds/search?q=";
 
 // Busca todos los perros de la API y los concatena con todos los perros de la DB
