@@ -2,28 +2,28 @@ import axios from "axios";
 
 export function createDog(dog) {
   return async (dispatch) => {
-    await axios.post("http://localhost:3001/dogs");
+    await axios.post("/dogs");
     dispatch({ type: "CREATE_DOG", payload: dog });
   };
 }
 
 export const getTemperaments = () => {
   return async (dispatch) => {
-    let temperamentosDb = await axios.get("http://localhost:3001/temperaments");
+    let temperamentosDb = await axios.get("/temperaments");
     dispatch({ type: "GET_TEMPERAMENTS", payload: temperamentosDb.data });
   };
 };
 
 export const getDogs = () => {
   return async (dispatch) => {
-    let pedidoApi = await axios.get("http://localhost:3001/dogs");
+    let pedidoApi = await axios.get("/dogs");
     dispatch({ type: "GET_DOGS", payload: pedidoApi.data });
   };
 };
 
 export const getDetails = (id) => {
   return async (dispatch) => {
-    let info = await axios.get(`http://localhost:3001/dogs/${id}`);
+    let info = await axios.get(`/dogs/${id}`);
     dispatch({ type: "GET_DETAILS", payload: info.data });
   };
 };
