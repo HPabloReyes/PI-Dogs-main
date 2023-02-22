@@ -8,7 +8,7 @@ import Details from "./components/Navbar/Details/Details";
 import Landing from "./components/Navbar/Landing/Landing";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3001/";
+axios.defaults.baseURL = "https://pi-dogs-main-production-2c8d.up.railway.app/";
 
 function App() {
   return (
