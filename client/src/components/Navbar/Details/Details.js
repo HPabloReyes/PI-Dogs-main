@@ -23,7 +23,7 @@ export default function Details(props) {
       {detail.length > 0 ? (
         detail.map((r) => {
           return (
-            <div className="carta">
+            <div>
               <PerrosDetailCard
                 key={r.id}
                 id={r.id}

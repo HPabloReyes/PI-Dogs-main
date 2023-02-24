@@ -12,7 +12,7 @@ export default function Navbar() {
         <div>
           <ul>
             <li>
-              <NavLink to={"/home"}>Home</NavLink>
+              <NavLink to={"/home"}>About</NavLink>
             </li>
             <li>
               <NavLink to={"/perros"}>Perros</NavLink>

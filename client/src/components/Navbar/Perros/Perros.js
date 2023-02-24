@@ -4,6 +4,7 @@ import PerrosSimpleCard from "./PerrosSimpleCard";
 import { getDogs, cleanDetails, ShowNav } from "../../../actions";
 import "./Perros.css";
 
+//#region Funciones ordenamiento, filtros y paginado
 export default function Perros() {
   let estadoPerros = useSelector((state) => state.perros);
   console.log(estadoPerros);
@@ -78,7 +79,6 @@ export default function Perros() {
       return estadoPerros.slice(current, current + 8);
     }
   };
-
   const nextPage = () => {
     if (
       estadoPerros.filter((dog) => dog.nombre.includes(search)).length >
@@ -123,10 +123,16 @@ export default function Perros() {
     setOrden(2);
     setSearchR(target.value);
   };
+  //#endregion
 
   return (
     <>
       <div id="principal">
+        <img
+          className="imagen_de_fondo"
+          src="https://c.wallhere.com/photos/4e/91/1920x1200_px_landscape_nature_sky-734989.jpg!d"
+          alt="fondo de formulario"
+        ></img>
         <div>
           <div id="contenedor_botones">
             <button onClick={sortPesoMax}>Pesados a Ligeros</button>
@@ -183,11 +189,12 @@ export default function Perros() {
               );
             })
           ) : (
-            <img
-              className="imagencarga"
-              src="https://i.gifer.com/origin/52/52e4bb28d095ff93d3a4019d43d628bc.gif"
-              alt={"imagen de carga"}
-            />
+            <div className="imagencarga">
+              <img
+                src="https://i.gifer.com/origin/52/52e4bb28d095ff93d3a4019d43d628bc.gif"
+                alt={"imagen de carga"}
+              />
+            </div>
           )}
         </div>
         <div id="contenedor_botones">

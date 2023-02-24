@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+.cajamayor {
+  width: 50%; /* Ancho del div */
+  height: 50%; /* Altura del div */
+  margin: auto; /* Margen automático en los cuatro lados */
+  top: 0; /* Centrar verticalmente */
+  bottom: 0; /* Centrar verticalmente */
+  left: 0; /* Centrar horizontalmente */
+  right: 0; /* Centrar horizontalmente */
+}
+
 main {
   max-width: 800px;
   width: 90%;
@@ -16,16 +26,18 @@ main {
   top: 0%;
   position: absolute;
   z-index: -1;
-  object-fit: cover;
+  background-size: cover;
 }
 
 .titulo {
   display: flex;
   font-size: large;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 1);
   color: white;
   margin-bottom: 100px;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .boton_mensaje {

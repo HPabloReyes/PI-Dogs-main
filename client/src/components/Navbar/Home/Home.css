@@ -1,0 +1,53 @@
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#about p {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.izquierda {
+  float: left;
+  width: 50%;
+}
+
+.derecha {
+  margin-top: 20px;
+  float: right;
+  max-width: 50%;
+}
+
+.derecha img {
+  width: 87%;
+  object-fit: contain;
+}
+
+.d3 {
+  max-width: 20%;
+  border-radius: 10%;
+  box-shadow: 2px 2px 5px 0px;
+}
+
+.itembox {
+  display: flex;
+}
+
+.itembox a {
+  text-decoration: none;
+  color: black;
+}
+
+.itembox:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.contenedoritems {
+  display: flex;
+  justify-content: space-between;
+}

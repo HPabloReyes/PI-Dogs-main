@@ -8,12 +8,11 @@
 .carta-container {
   display: flex;
   justify-content: center;
-  width: 654px;
+  max-width: 450px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  margin: 5px 10px 5px 10px;
-  background-color: white;
+  margin: 2.5px 10px 2.5px 10px;
   box-shadow: 2px 2px 5px 0px;
 }
 
@@ -24,7 +23,6 @@
 
 .imagenlink:hover > img {
   transform: scale(1.2);
-  opacity: 0.7;
 }
 
 .carta-desc {
@@ -68,11 +66,10 @@
 }
 #principal {
   background-image: url("https://c.wallhere.com/photos/4e/91/1920x1200_px_landscape_nature_sky-734989.jpg!d");
+  background-size: cover;
 }
 .caja_buscadores {
-  display: inline-block;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 0px 7px 0px 6px;
 }
 
 .buscador {
@@ -80,7 +77,9 @@
   border: none;
   height: 20px;
   width: 666px;
-  margin-right: 2px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+
   line-height: 45px;
   border-radius: 2px;
 }
@@ -98,9 +97,13 @@
 }
 
 .imagencarga {
-  position: absolute;
-  top: 22%;
-  right: 40%;
+  position: absolute; /* El div se posiciona absolutamente dentro del contenedor padre */
+  top: 50%; /* El borde superior del div se sitúa en el 50% de la altura del contenedor padre */
+  left: 50%; /* El borde izquierdo del div se sitúa en el 50% del ancho del contenedor padre */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Se traslada el div hacia arriba y hacia la izquierda para centrarlo */
 }
 
 .boton_borrar {

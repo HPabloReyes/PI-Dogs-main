@@ -77,7 +77,7 @@ export default function Create() {
   const post = async function (input) {
     try {
       await axios({
-        url: "http://localhost:3001/dogs",
+        url: "/dogs",
         method: "POST",
         data: input,
       });
@@ -116,7 +116,15 @@ export default function Create() {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div className="cajamayor">
+      <img
+        className="imagen_de_fondo"
+        src="playa.jpeg"
+        alt="fondo de formulario"
+      />
+      <div className="titulo">
+        <p>Ingrese nuevo perro</p>
+      </div>
       <div>
         {show && (
           <button className="boton_mensaje" onClick={() => setShow(false)}>
@@ -125,14 +133,6 @@ export default function Create() {
         )}
         {show && <Createdmsg />}
       </div>
-      <div className="titulo">
-        <p>Ingrese nuevo perro</p>
-      </div>
-      <img
-        className="imagen_de_fondo"
-        src="http://cdn11.overnature.net/5120/683-amanecer-en-el-bosque-de-invierno.jpg"
-        alt="fondo de formulario"
-      />
       <Formulario onSubmit={(e) => hanldeSubmit(e)}>
         <div>
           <Label>
