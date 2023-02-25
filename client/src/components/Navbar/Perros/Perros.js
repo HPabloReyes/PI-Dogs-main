@@ -128,13 +128,8 @@ export default function Perros() {
   return (
     <>
       <div id="principal">
-        <img
-          className="imagen_de_fondo"
-          src="https://c.wallhere.com/photos/4e/91/1920x1200_px_landscape_nature_sky-734989.jpg!d"
-          alt="fondo de formulario"
-        ></img>
-        <div>
-          <div id="contenedor_botones">
+        <div id="contenedor_botones">
+          <div>
             <button onClick={sortPesoMax}>Pesados a Ligeros</button>
             <button onClick={sortPesoMin}>Ligeros a Pesados</button>
             <button onClick={sortA}> Aa/Zz </button>
@@ -150,7 +145,7 @@ export default function Perros() {
             onChange={onSearchRace}
           />
           <input
-            className="buscador"
+            className="buscador2"
             type="text"
             placeholder="Buscar Perro por Raza"
             value={search}

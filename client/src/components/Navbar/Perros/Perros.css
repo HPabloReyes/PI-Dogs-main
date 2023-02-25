@@ -8,14 +8,17 @@
 .carta-container {
   display: flex;
   justify-content: center;
-  max-width: 450px;
+  max-width: 100%;
   overflow: hidden;
   position: relative;
   cursor: pointer;
   margin: 2.5px 10px 2.5px 10px;
   box-shadow: 2px 2px 5px 0px;
 }
-
+.imagen2 {
+  width: 612px;
+  height: 400px;
+}
 .imagenlink > img {
   object-fit: cover;
   transition: all 0.2s ease-in-out;
@@ -79,7 +82,17 @@
   width: 666px;
   margin-right: 0.5%;
   margin-left: 0.5%;
+  line-height: 45px;
+  border-radius: 2px;
+}
 
+.buscador2 {
+  flex-direction: row;
+  border: none;
+  height: 20px;
+  width: 666px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
   line-height: 45px;
   border-radius: 2px;
 }
@@ -109,4 +122,72 @@
 .boton_borrar {
   position: absolute;
   right: 0%;
+}
+
+@media screen and (max-width: 740px) {
+  /* Estilos para una pantalla con un ancho máximo de 767 píxeles */
+  .carta-container {
+    display: flex;
+    justify-content: center;
+    max-width: 157px;
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 2.5px 10px 2.5px 10px;
+    box-shadow: 2px 2px 5px 0px;
+  }
+
+  .caja_buscadores {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .buscador {
+    float: left;
+    border: none;
+    width: 100%;
+    line-height: 45px;
+    border-radius: 2px;
+  }
+
+  .buscador2 {
+    float: right;
+    border: none;
+    width: 100%;
+    line-height: 45px;
+    border-radius: 2px;
+  }
+
+  #contenedor_botones button {
+    all: unset;
+    color: white;
+    padding: 20px 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .anterior {
+    float: left;
+    width: 50%;
+  }
+
+  .siguiente {
+    float: right;
+    width: 50%;
+  }
+
+  .carta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagen2 {
+    width: 250px;
+    height: auto;
+  }
+  /* Otras reglas CSS para pantallas pequeñas */
 }

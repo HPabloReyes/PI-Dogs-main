@@ -9,6 +9,7 @@
   background-color: black;
 }
 .imagen_landing {
+  width: 750px;
   border: solid white;
   border-color: white;
   border-radius: 10px;
@@ -50,4 +51,30 @@
   position: absolute;
   z-index: -1;
   object-fit: cover;
+}
+
+@media screen and (max-width: 740px) {
+  /* Estilos para una pantalla con un ancho máximo de 767 píxeles */
+  .contenedor_landing {
+    margin-left: unset;
+    margin-right: unset;
+    padding: unset;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 0px;
+    background-color: black;
+    position: absolute;
+  }
+
+  .texto_landing h1 {
+    font-size: medium;
+  }
+
+  .imagen_landing {
+    width: 70%;
+  }
+  /* Otras reglas CSS para pantallas pequeñas */
 }

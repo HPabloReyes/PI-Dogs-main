@@ -15,7 +15,7 @@ export default function PerrosSimpleCard({
   return (
     <div className="carta-container">
       <Link className="imagenlink" to={`/details/` + id}>
-        <img src={imagen} alt="recipe_image" width={655} height={400} />
+        <img className="imagen2" src={imagen} alt="recipe_image" />
       </Link>
       <div className="carta-desc">
         <h1>{nombre}</h1>

@@ -1,7 +1,11 @@
+.principal2 {
+  background-image: url("http://cdn09.overnature.net/5120/585-atardecer-en-el-campo.jpg");
+}
+
 #about {
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -23,7 +27,7 @@
 }
 
 .derecha img {
-  width: 87%;
+  width: 83%;
   object-fit: contain;
 }
 
@@ -50,4 +54,26 @@
 .contenedoritems {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 740px) {
+  /* Estilos para una pantalla con un ancho máximo de 767 píxeles */
+
+  #about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.37);
+  }
+
+  .izquierda {
+    float: unset;
+    width: unset;
+  }
+
+  .derecha {
+    float: unset;
+    width: unset;
+  }
+  /* Otras reglas CSS para pantallas pequeñas */
 }

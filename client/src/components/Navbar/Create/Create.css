@@ -59,3 +59,18 @@ main {
   background-color: #f7945b;
   transition: 1s ease all;
 }
+
+@media screen and (max-width: 740px) {
+  /* Estilos para una pantalla con un ancho máximo de 767 píxeles */
+
+  .cajamayor {
+    width: unset; /* Ancho del div */
+    height: 50%; /* Altura del div */
+    margin: auto; /* Margen automático en los cuatro lados */
+    top: 0; /* Centrar verticalmente */
+    bottom: 0; /* Centrar verticalmente */
+    left: 0; /* Centrar horizontalmente */
+    right: 0; /* Centrar horizontalmente */
+  }
+  /* Otras reglas CSS para pantallas pequeñas */
+}
