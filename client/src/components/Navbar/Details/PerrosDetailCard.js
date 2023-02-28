@@ -32,37 +32,42 @@ export default function PerrosDetailCard({
   };
 
   return (
-    <div className="infocarta">
+    <div className="">
       <div>
-        {show && (
-          <button className="boton_mensaje" onClick={() => setShow(false)}>
-            Aceptar
-          </button>
-        )}
-        {show ? <DeletedMsg /> : null}
+        <div>
+          {show && (
+            <button className="boton_mensaje" onClick={() => setShow(false)}>
+              Aceptar
+            </button>
+          )}
+          {show ? <DeletedMsg /> : null}
+        </div>
+        <div>
+          {tempC ? (
+            <button className="boton_borrar" onClick={() => hanldeSubmit(id)}>
+              X
+            </button>
+          ) : null}
+        </div>
       </div>
-      <div>
-        {tempC ? (
-          <button className="boton_borrar" onClick={() => hanldeSubmit(id)}>
-            X
-          </button>
-        ) : null}
-      </div>
-      <div>
-        <h1>{nombre}</h1>
-        <p>
-          <b> Altura promedio:</b> {altura} {tempC ? "Cm" : null}
-        </p>
-        <p>
-          <b>Peso:</b> {peso_maximo ? peso_minimo : peso}
-          {peso_maximo ? "-" : null} {peso_maximo ? peso_maximo + " kg" : null}
-        </p>
-        <p>
-          <b>Temperamento: </b> {tempC ? tempC : temperamento}
-        </p>
-        <p>
-          <b>Años de vida: </b> {años_de_vida} {tempC ? "años" : null}
-        </p>
+      <div className="infocarta">
+        <div>
+          <h1>{nombre}</h1>
+          <p>
+            <b> Altura promedio:</b> {altura} {tempC ? "Cm" : null}
+          </p>
+          <p>
+            <b>Peso:</b> {peso_maximo ? peso_minimo : peso}
+            {peso_maximo ? "-" : null}{" "}
+            {peso_maximo ? peso_maximo + " kg" : null}
+          </p>
+          <p>
+            <b>Temperamento: </b> {tempC ? tempC : temperamento}
+          </p>
+          <p>
+            <b>Años de vida: </b> {años_de_vida} {tempC ? "años" : null}
+          </p>
+        </div>
       </div>
       <div class="contenedor-imagen">
         <img src={image} alt={`imagen de perro${id}`} />

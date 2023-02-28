@@ -25,11 +25,9 @@
   background-color: #f7945b;
 }
 
-.contenedor-imagen {
-  width: 100%; /* El div ocupa el 100% del ancho del contenedor padre */
-}
-
-.contenedor-imagen img {
-  width: 1920px; /* La imagen ocupa el 100% del ancho del div que la contiene */
-  height: auto; /* La altura se ajusta automáticamente según el ancho para mantener la proporción */
+@media screen and (max-width: 740px) {
+  /* Estilos para una pantalla con un ancho máximo de 767 píxeles */
+  .contenedor-imagen img {
+    max-width: 360px;
+  }
 }
