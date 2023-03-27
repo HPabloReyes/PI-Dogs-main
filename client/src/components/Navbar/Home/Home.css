@@ -54,6 +54,7 @@
 .contenedoritems {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 740px) {
