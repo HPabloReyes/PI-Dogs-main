@@ -110,7 +110,7 @@
 }
 
 .imagencarga {
-  position: absolute; /* El div se posiciona absolutamente dentro del contenedor padre */
+  position: relative; /* El div se posiciona absolutamente dentro del contenedor padre */
   top: 50%; /* El borde superior del div se sitúa en el 50% de la altura del contenedor padre */
   left: 50%; /* El borde izquierdo del div se sitúa en el 50% del ancho del contenedor padre */
   transform: translate(
