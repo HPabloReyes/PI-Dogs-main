@@ -21,8 +21,8 @@ const server = require("./src/app.js");
 const { conn } = require("./src/db.js");
 const { Temperamento } = require("./src/db");
 const axios = require("axios");
+const port = process.env.PORT || "8080";
 require("dotenv").config();
-const PORT = process.env.PORT || "8080";
 
 const precharge = async function () {
   const perros = await axios.get("https://api.thedogapi.com/v1/breeds");
@@ -56,7 +56,7 @@ const precharge = async function () {
 // Syncing all the models at once.
 conn.sync({ force: true }).then(() => {
   precharge();
-  server.listen(PORT, () => {
-    console.log("%s listening at ", PORT); // eslint-disable-line no-console
+  server.listen(port, () => {
+    console.log("%s listening at ", port); // eslint-disable-line no-console
   });
 });
