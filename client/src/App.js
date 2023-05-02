@@ -8,8 +8,8 @@ import Details from "./components/Navbar/Details/Details";
 import Landing from "./components/Navbar/Landing/Landing";
 import axios from "axios";
 
-//axios.defaults.baseURL = "https://cold-snow-3471.fly.dev";
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL = "https://pi-dogs-main-production-34f3.up.railway.app/";
+//axios.defaults.baseURL = "http://localhost:3001";
 
 function App() {
   return (
