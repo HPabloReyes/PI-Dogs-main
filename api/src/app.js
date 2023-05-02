@@ -15,8 +15,8 @@ server.use(bodyParser.json({ limit: "50mb" }));
 server.use(cookieParser());
 server.use(morgan("dev"));
 
-//const acceso = "https://pi-dogs-main-gold.vercel.app";
-const acceso = "http://localhost:3000";
+const acceso = "https://pi-dogs-main-gold.vercel.app";
+//const acceso = "http://localhost:3000";
 
 server.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", acceso); // update to match the domains you will make the request from
